@@ -1,3 +1,3 @@
 # week 1:
 
-# - Programming competition, testing
+- Programming competition, testing
