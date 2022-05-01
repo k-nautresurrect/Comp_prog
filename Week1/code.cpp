@@ -52,13 +52,12 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 void k_n_s() {
 	ios_base::sync_with_stdio(0);  cin.tie(0);  cout.tie(0);
 	w(t) {
-		int x, y, z; cin >> x >> y >> z;
-		if (z >= x + y) cout << 2 << ln;
-		else if (z < x + y) {
-			if (x > z) cout << 0 << ln;
-			else cout << 1 << ln;
-		}
-
+		int x, y; cin >> x >> y;
+		int days = 100;
+		int xcost = (days / 1) * x; int ycost = (days / 10) * y;
+		if (xcost == ycost) cout << "Cloth" << ln;
+		else if (xcost > ycost) cout << "Cloth" << ln;
+		else if (xcost < ycost) cout << "Disposable" << ln;
 	}
 }
 
